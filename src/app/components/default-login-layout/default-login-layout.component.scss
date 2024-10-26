@@ -23,7 +23,7 @@ main {
 
 .form-section {
   flex-grow: 0.3;
-  padding: 0 35px;
+  padding: 0 50px;
   gap: 34px;
 
   h2 {
@@ -37,6 +37,25 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap: 30px;
+
+    .divider {
+      display: flex;
+      font-size: 14px;
+      color: $gray-bg;
+      font-weight: 400;
+      text-transform: uppercase;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      div {
+        flex-grow: 1;
+        height: 2px;
+        background-color: $gray-bg;
+      }
+    }
 
     button {
       width: 100%;
@@ -46,6 +65,7 @@ main {
       border: none;
       background-color: transparent;
       padding: 12px 24px;
+      cursor: pointer;
 
       &.btn-primary {
         background-color: $primary-color;
@@ -54,7 +74,7 @@ main {
       }
 
       &.btn-secondary {
-        border-color: 1px solid $primary-color;
+        border: 1px solid $primary-color;
         color: $primary-color;
       }
     }
